@@ -27,7 +27,7 @@ class AmazingListAPI {
     // Get place list
     func doGetPlaceList(completion: @escaping (_ placeList: [AmazingPlaceListRM]?) -> Void) {
         
-        let strURL = "http://www.mocky.io/v2/5d60ee3e32000059008e5fd5"
+        let strURL = "http://www.mocky.io/v2/5d625bad330000a51255a660"
         APIRequest.shared.doRequest(strURL: strURL) { (response) in
             if let _response = response, let _placesList = _response["areas"] as? [[String: Any]] {
                 var placeList = [AmazingPlaceListRM]()

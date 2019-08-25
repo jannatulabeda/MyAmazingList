@@ -13,35 +13,34 @@ class AmazingListVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
 
+    let concurrentQueue = DispatchQueue(label: "com.queue.Concurrent", attributes: .concurrent)
     let amazingListVM = AmazingListVM()
     
     var topRatedList = [TopRatedCellVM]()
     var amazingPlaceList = [PlaceTableCellVM]()
+
+    var getTopRatedListTimer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Top rated list in CollectionView
         setupCollectionView()
-        amazingListVM.requestForTopRatedList(completion: { (topRatedPlaceList) in
-        if let _topRatedList = topRatedPlaceList {
-            self.topRatedList = _topRatedList
-                DispatchQueue.main.async {
-                    self.collectionView.reloadData()
-                }
-            }
-        })
-        
-        // Place list in TableView
         setupTableView()
-        amazingListVM.requestForPlaceList { (placeList) in
-            if let _placeList = placeList {
-                self.amazingPlaceList = _placeList
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
+
+        requestForTopRatedList()
+        
+        concurrentQueue.async {
+            self.amazingListVM.requestForPlaceList { (placeList) in
+                if let _placeList = placeList {
+                    self.amazingPlaceList = _placeList
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
                 }
             }
         }
+        getTopRatedListTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(requestForTopRatedList), userInfo: nil, repeats: true)
     }
     
     func setupCollectionView() {
@@ -56,6 +55,19 @@ class AmazingListVC: UIViewController {
         tableView.register(UINib(nibName: "PlaceTableCell", bundle: nil), forCellReuseIdentifier: "PlaceTableCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 600
+    }
+    
+    @objc func requestForTopRatedList() {
+        concurrentQueue.async {
+            self.amazingListVM.requestForTopRatedList(completion: { (topRatedPlaceList) in
+                if let _topRatedList = topRatedPlaceList {
+                    self.topRatedList = _topRatedList
+                    DispatchQueue.main.async {
+                        self.collectionView.reloadData()
+                    }
+                }
+            })
+        }
     }
 }
 
