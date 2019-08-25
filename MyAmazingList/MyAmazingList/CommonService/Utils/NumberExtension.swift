@@ -1,5 +1,5 @@
 //
-//  CGFloatExtension.swift
+//  NumberExtension.swift
 //  MyAmazingList
 //
 //  Created by Jannatul Abeda on 2019/08/24.
@@ -9,6 +9,12 @@
 import UIKit
 
 extension Int {
+    func scale() -> CGFloat {
+        return CGFloat(self) * Utils.scale
+    }
+}
+
+extension CGFloat {
     func scale() -> CGFloat {
         return CGFloat(self) * Utils.scale
     }
