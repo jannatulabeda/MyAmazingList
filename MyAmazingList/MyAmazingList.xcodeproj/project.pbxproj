@@ -54,6 +54,12 @@
 		71A2345D23117FAC0004C2AD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* CollectionViewCell.xib */; };
 		71A2345E23117FAC0004C2AD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* CollectionViewCell.xib */; };
 		71A2345F23117FAC0004C2AD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* CollectionViewCell.xib */; };
+		71A23461231244030004C2AD /* AmazingListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23460231244030004C2AD /* AmazingListAPI.swift */; };
+		71A23462231244030004C2AD /* AmazingListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23460231244030004C2AD /* AmazingListAPI.swift */; };
+		71A23463231244030004C2AD /* AmazingListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23460231244030004C2AD /* AmazingListAPI.swift */; };
+		71A23467231246DF0004C2AD /* AmazingListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* AmazingListRM.swift */; };
+		71A23468231246DF0004C2AD /* AmazingListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* AmazingListRM.swift */; };
+		71A23469231246DF0004C2AD /* AmazingListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* AmazingListRM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +105,8 @@
 		711218FE2311719E00620F19 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		71A2345823117FAC0004C2AD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		71A2345923117FAC0004C2AD /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		71A23460231244030004C2AD /* AmazingListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingListAPI.swift; sourceTree = "<group>"; };
+		71A23466231246DF0004C2AD /* AmazingListRM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingListRM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +189,8 @@
 		711218C92310E29C00620F19 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
-				711218F22310FDDB00620F19 /* APIRequest.swift */,
+				71A23464231245960004C2AD /* ResponseModel */,
+				71A23465231245A70004C2AD /* APIRequest */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -275,6 +284,23 @@
 				71A2345923117FAC0004C2AD /* CollectionViewCell.xib */,
 			);
 			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		71A23464231245960004C2AD /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				71A23466231246DF0004C2AD /* AmazingListRM.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		71A23465231245A70004C2AD /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				711218F22310FDDB00620F19 /* APIRequest.swift */,
+				71A23460231244030004C2AD /* AmazingListAPI.swift */,
+			);
+			path = APIRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,9 +445,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A23461231244030004C2AD /* AmazingListAPI.swift in Sources */,
 				711218FF2311719E00620F19 /* UIImageViewExtension.swift in Sources */,
 				711218D32310E4B100620F19 /* AmazingListVC.swift in Sources */,
 				711218DF2310EF4700620F19 /* DetailOnWebVC.swift in Sources */,
+				71A23467231246DF0004C2AD /* AmazingListRM.swift in Sources */,
 				711218F8231153B500620F19 /* AmazingTableCell.swift in Sources */,
 				7112189C2310E25F00620F19 /* AppDelegate.swift in Sources */,
 				711218EF2310FC7500620F19 /* NumberExtension.swift in Sources */,
@@ -437,9 +465,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A23462231244030004C2AD /* AmazingListAPI.swift in Sources */,
 				711219002311719E00620F19 /* UIImageViewExtension.swift in Sources */,
 				711218D42310E4B100620F19 /* AmazingListVC.swift in Sources */,
 				711218E02310EF4700620F19 /* DetailOnWebVC.swift in Sources */,
+				71A23468231246DF0004C2AD /* AmazingListRM.swift in Sources */,
 				711218F9231153B500620F19 /* AmazingTableCell.swift in Sources */,
 				711218B12310E26000620F19 /* MyAmazingListTests.swift in Sources */,
 				711218F02310FC7500620F19 /* NumberExtension.swift in Sources */,
@@ -455,9 +485,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A23463231244030004C2AD /* AmazingListAPI.swift in Sources */,
 				711219012311719E00620F19 /* UIImageViewExtension.swift in Sources */,
 				711218D52310E4B100620F19 /* AmazingListVC.swift in Sources */,
 				711218E12310EF4700620F19 /* DetailOnWebVC.swift in Sources */,
+				71A23469231246DF0004C2AD /* AmazingListRM.swift in Sources */,
 				711218FA231153B500620F19 /* AmazingTableCell.swift in Sources */,
 				711218BC2310E26000620F19 /* MyAmazingListUITests.swift in Sources */,
 				711218F12310FC7500620F19 /* NumberExtension.swift in Sources */,

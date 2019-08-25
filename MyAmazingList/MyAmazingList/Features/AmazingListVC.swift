@@ -13,6 +13,9 @@ class AmazingListVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
 
+    let amazingListAPI = AmazingListAPI()
+    var amazingTopRatedList: [AmazingListRM]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +25,13 @@ class AmazingListVC: UIViewController {
         collectionView.collectionViewLayout = flowLayout
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
-        collectionView.reloadData()
+        amazingListAPI.doGetAmazingPlaceList { amazingPlaceList in
+            self.amazingTopRatedList = amazingPlaceList
+            
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
         
         // TableView
         tableView.register(UINib(nibName: "AmazingTableCell", bundle: nil), forCellReuseIdentifier: "AmazingTableCell")
@@ -50,6 +59,14 @@ extension AmazingListVC : UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell {
+            
+        
+            if amazingTopRatedList != nil {
+                let topRatedPlace = amazingTopRatedList![indexPath.row]
+                let url = URL(string: topRatedPlace.image_url!)
+                let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                cell.imageView.image = UIImage(data: data!)
+            }
             cell.layoutIfNeeded()
             return cell
         } else {
@@ -59,6 +76,7 @@ extension AmazingListVC : UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let viewController = UIStoryboard(name: "DetailOnWebView", bundle: nil).instantiateViewController(withIdentifier: "DetailOnWebVC") as? DetailOnWebVC {
+            viewController.webLink = amazingTopRatedList![indexPath.row].url!
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

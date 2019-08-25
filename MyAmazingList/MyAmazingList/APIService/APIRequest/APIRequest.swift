@@ -20,21 +20,23 @@ class APIRequest: NSObject {
         print("URL:: \(strURL)")
         
         if let url = URL(string: strURL) {
-            URLSession.shared.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
-                if let _error = error {
-                    // Handle Error
-                    return
-                }
+            let dataTask = URLSession.shared.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
+//                if let _error = error {
+//                    // Handle Error
+////                    return
+//                }
                 guard let _data = data else {
                     return
                 }
                 do {
                     let json = try JSONSerialization.jsonObject(with: _data, options: [])
+                    completion(json as! [String : Any])
                     print(json)
                 } catch {
                     print("JSON error: \(error.localizedDescription)")
                 }
             }
+            dataTask.resume()
         }
     }
 }
