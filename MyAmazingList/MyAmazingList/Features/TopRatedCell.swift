@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.swift
+//  TopRatedCell.swift
 //  MyAmazingList
 //
 //  Created by Jannatul Abeda on 2019/08/24.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class TopRatedCell: UICollectionViewCell {
 
     @IBOutlet weak var viewImageShadow: UIView!
     @IBOutlet weak var imageView: UIImageView!
@@ -23,5 +23,12 @@ class CollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         imageView.image = UIImage(named: "default")
+    }
+    
+    // Update data
+    func updateData(info: TopRatedCellVM) {
+        if let _imageURL = URL(string: info.imageURL) {
+            imageView.downloadImage(link: _imageURL)
+        }
     }
 }

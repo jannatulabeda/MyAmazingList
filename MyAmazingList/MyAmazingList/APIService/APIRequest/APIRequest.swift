@@ -17,24 +17,21 @@ class APIRequest: NSObject {
     // Do request
     func doRequest(strURL: String,
                    completion: @escaping response) {
-        print("URL:: \(strURL)")
-        
         if let url = URL(string: strURL) {
-            URLSession.shared.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
-                if let _error = error {
-                    // Handle Error
-                    return
-                }
+            let dataTask = URLSession.shared.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
                 guard let _data = data else {
                     return
                 }
                 do {
                     let json = try JSONSerialization.jsonObject(with: _data, options: [])
-                    print(json)
+                    if let _dataDict = json as? [String : Any] {
+                        completion(_dataDict)
+                    }
                 } catch {
                     print("JSON error: \(error.localizedDescription)")
                 }
             }
+            dataTask.resume()
         }
     }
 }
