@@ -20,24 +20,24 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEj-of-bHD">
-                        <rect key="frame" x="15" y="17.5" width="59.5" height="59.5"/>
+                        <rect key="frame" x="15" y="21.5" width="51" height="51.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-oh-gJ7">
-                        <rect key="frame" x="15" y="17.5" width="59.5" height="59.5"/>
+                        <rect key="frame" x="15" y="21.5" width="51" height="51.5"/>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="IuP-oh-gJ7" secondAttribute="height" multiplier="1:1" id="62I-tr-Uet"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68D-Hu-mAX" userLabel="Title">
-                        <rect key="frame" x="84.5" y="15" width="220.5" height="20.5"/>
+                        <rect key="frame" x="76" y="15" width="229" height="20.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label 2nd line" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwc-wB-6om" userLabel="Description">
-                        <rect key="frame" x="84.5" y="40.5" width="220.5" height="38"/>
+                        <rect key="frame" x="76" y="40.5" width="229" height="38"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                     <constraint firstItem="Uwc-wB-6om" firstAttribute="leading" secondItem="IuP-oh-gJ7" secondAttribute="trailing" constant="10" id="3So-x9-ddP"/>
                     <constraint firstItem="IuP-oh-gJ7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="993-0T-vG4"/>
                     <constraint firstAttribute="trailing" secondItem="68D-Hu-mAX" secondAttribute="trailing" constant="15" id="9Ii-WO-syj"/>
-                    <constraint firstItem="IuP-oh-gJ7" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="70:375" id="ASd-eC-1P4"/>
+                    <constraint firstItem="IuP-oh-gJ7" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="60:375" id="ASd-eC-1P4"/>
                     <constraint firstItem="Uwc-wB-6om" firstAttribute="top" secondItem="68D-Hu-mAX" secondAttribute="bottom" constant="5" id="KiC-pQ-fV8"/>
                     <constraint firstItem="vEj-of-bHD" firstAttribute="trailing" secondItem="IuP-oh-gJ7" secondAttribute="trailing" id="Myc-B7-lE4"/>
                     <constraint firstItem="aa4-1k-nfH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Pcr-JP-mzM"/>

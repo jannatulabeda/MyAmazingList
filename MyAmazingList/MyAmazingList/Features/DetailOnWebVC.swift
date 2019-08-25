@@ -46,6 +46,7 @@ class DetailOnWebVC: UIViewController {
 // MARK: - UIWebViewDelegate
 extension DetailOnWebVC: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        title = webView.title
         ProgressHUD.shared.hide()
     }
     
