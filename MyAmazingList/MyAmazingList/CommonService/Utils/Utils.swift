@@ -27,7 +27,6 @@ class Utils {
                 topPadding = appDelegate.window?.safeAreaInsets.top ?? 0.0
             }
         }
-        
         return topPadding
     }
     
@@ -41,7 +40,17 @@ class Utils {
                 bottomPadding = appDelegate.window?.safeAreaInsets.bottom ?? 0.0
             }
         }
-        
         return bottomPadding
+    }
+    
+    // Show Alert
+    func showAlert(message:String){
+        
+        let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        
+        //show alert on main window
+        let _window = UIApplication.shared.keyWindow
+        _window?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
 }

@@ -39,27 +39,42 @@
 		711218F32310FDDB00620F19 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F22310FDDB00620F19 /* APIRequest.swift */; };
 		711218F42310FDDB00620F19 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F22310FDDB00620F19 /* APIRequest.swift */; };
 		711218F52310FDDB00620F19 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F22310FDDB00620F19 /* APIRequest.swift */; };
-		711218F8231153B500620F19 /* AmazingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F6231153B500620F19 /* AmazingTableCell.swift */; };
-		711218F9231153B500620F19 /* AmazingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F6231153B500620F19 /* AmazingTableCell.swift */; };
-		711218FA231153B500620F19 /* AmazingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F6231153B500620F19 /* AmazingTableCell.swift */; };
-		711218FB231153B500620F19 /* AmazingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711218F7231153B500620F19 /* AmazingTableCell.xib */; };
-		711218FC231153B500620F19 /* AmazingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711218F7231153B500620F19 /* AmazingTableCell.xib */; };
-		711218FD231153B500620F19 /* AmazingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711218F7231153B500620F19 /* AmazingTableCell.xib */; };
+		711218F8231153B500620F19 /* PlaceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F6231153B500620F19 /* PlaceTableCell.swift */; };
+		711218F9231153B500620F19 /* PlaceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F6231153B500620F19 /* PlaceTableCell.swift */; };
+		711218FA231153B500620F19 /* PlaceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218F6231153B500620F19 /* PlaceTableCell.swift */; };
+		711218FB231153B500620F19 /* PlaceTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711218F7231153B500620F19 /* PlaceTableCell.xib */; };
+		711218FC231153B500620F19 /* PlaceTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711218F7231153B500620F19 /* PlaceTableCell.xib */; };
+		711218FD231153B500620F19 /* PlaceTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711218F7231153B500620F19 /* PlaceTableCell.xib */; };
 		711218FF2311719E00620F19 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218FE2311719E00620F19 /* UIImageViewExtension.swift */; };
 		711219002311719E00620F19 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218FE2311719E00620F19 /* UIImageViewExtension.swift */; };
 		711219012311719E00620F19 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711218FE2311719E00620F19 /* UIImageViewExtension.swift */; };
-		71A2345A23117FAC0004C2AD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2345823117FAC0004C2AD /* CollectionViewCell.swift */; };
-		71A2345B23117FAC0004C2AD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2345823117FAC0004C2AD /* CollectionViewCell.swift */; };
-		71A2345C23117FAC0004C2AD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2345823117FAC0004C2AD /* CollectionViewCell.swift */; };
-		71A2345D23117FAC0004C2AD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* CollectionViewCell.xib */; };
-		71A2345E23117FAC0004C2AD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* CollectionViewCell.xib */; };
-		71A2345F23117FAC0004C2AD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* CollectionViewCell.xib */; };
+		71A2345A23117FAC0004C2AD /* TopRatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2345823117FAC0004C2AD /* TopRatedCell.swift */; };
+		71A2345B23117FAC0004C2AD /* TopRatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2345823117FAC0004C2AD /* TopRatedCell.swift */; };
+		71A2345C23117FAC0004C2AD /* TopRatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2345823117FAC0004C2AD /* TopRatedCell.swift */; };
+		71A2345D23117FAC0004C2AD /* TopRatedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* TopRatedCell.xib */; };
+		71A2345E23117FAC0004C2AD /* TopRatedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* TopRatedCell.xib */; };
+		71A2345F23117FAC0004C2AD /* TopRatedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A2345923117FAC0004C2AD /* TopRatedCell.xib */; };
 		71A23461231244030004C2AD /* AmazingListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23460231244030004C2AD /* AmazingListAPI.swift */; };
 		71A23462231244030004C2AD /* AmazingListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23460231244030004C2AD /* AmazingListAPI.swift */; };
 		71A23463231244030004C2AD /* AmazingListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23460231244030004C2AD /* AmazingListAPI.swift */; };
-		71A23467231246DF0004C2AD /* AmazingListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* AmazingListRM.swift */; };
-		71A23468231246DF0004C2AD /* AmazingListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* AmazingListRM.swift */; };
-		71A23469231246DF0004C2AD /* AmazingListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* AmazingListRM.swift */; };
+		71A23467231246DF0004C2AD /* TopRatedPlaceListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* TopRatedPlaceListRM.swift */; };
+		71A23468231246DF0004C2AD /* TopRatedPlaceListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* TopRatedPlaceListRM.swift */; };
+		71A23469231246DF0004C2AD /* TopRatedPlaceListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23466231246DF0004C2AD /* TopRatedPlaceListRM.swift */; };
+		71A2346B2312526D0004C2AD /* AmazingPlaceListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2346A2312526D0004C2AD /* AmazingPlaceListRM.swift */; };
+		71A2346C2312526D0004C2AD /* AmazingPlaceListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2346A2312526D0004C2AD /* AmazingPlaceListRM.swift */; };
+		71A2346D2312526D0004C2AD /* AmazingPlaceListRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2346A2312526D0004C2AD /* AmazingPlaceListRM.swift */; };
+		71A23470231287120004C2AD /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2346F231287120004C2AD /* APIConstant.swift */; };
+		71A23471231287120004C2AD /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2346F231287120004C2AD /* APIConstant.swift */; };
+		71A23472231287120004C2AD /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2346F231287120004C2AD /* APIConstant.swift */; };
+		71A23474231289D20004C2AD /* AmazingListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23473231289D20004C2AD /* AmazingListVM.swift */; };
+		71A23475231289D20004C2AD /* AmazingListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23473231289D20004C2AD /* AmazingListVM.swift */; };
+		71A23476231289D20004C2AD /* AmazingListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23473231289D20004C2AD /* AmazingListVM.swift */; };
+		71A2347C23128B4A0004C2AD /* TopRatedCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2347B23128B4A0004C2AD /* TopRatedCellVM.swift */; };
+		71A2347D23128B4A0004C2AD /* TopRatedCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2347B23128B4A0004C2AD /* TopRatedCellVM.swift */; };
+		71A2347E23128B4A0004C2AD /* TopRatedCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2347B23128B4A0004C2AD /* TopRatedCellVM.swift */; };
+		71A2348023128BF70004C2AD /* PlaceTableCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2347F23128BF70004C2AD /* PlaceTableCellVM.swift */; };
+		71A2348123128BF70004C2AD /* PlaceTableCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2347F23128BF70004C2AD /* PlaceTableCellVM.swift */; };
+		71A2348223128BF70004C2AD /* PlaceTableCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2347F23128BF70004C2AD /* PlaceTableCellVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,13 +115,18 @@
 		711218EA2310FC3700620F19 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		711218EE2310FC7500620F19 /* NumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
 		711218F22310FDDB00620F19 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		711218F6231153B500620F19 /* AmazingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AmazingTableCell.swift; path = AmazingTableCell/AmazingTableCell.swift; sourceTree = "<group>"; };
-		711218F7231153B500620F19 /* AmazingTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AmazingTableCell.xib; path = AmazingTableCell/AmazingTableCell.xib; sourceTree = "<group>"; };
+		711218F6231153B500620F19 /* PlaceTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaceTableCell.swift; path = AmazingTableCell/PlaceTableCell.swift; sourceTree = "<group>"; };
+		711218F7231153B500620F19 /* PlaceTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlaceTableCell.xib; path = AmazingTableCell/PlaceTableCell.xib; sourceTree = "<group>"; };
 		711218FE2311719E00620F19 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
-		71A2345823117FAC0004C2AD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		71A2345923117FAC0004C2AD /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		71A2345823117FAC0004C2AD /* TopRatedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedCell.swift; sourceTree = "<group>"; };
+		71A2345923117FAC0004C2AD /* TopRatedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopRatedCell.xib; sourceTree = "<group>"; };
 		71A23460231244030004C2AD /* AmazingListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingListAPI.swift; sourceTree = "<group>"; };
-		71A23466231246DF0004C2AD /* AmazingListRM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingListRM.swift; sourceTree = "<group>"; };
+		71A23466231246DF0004C2AD /* TopRatedPlaceListRM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedPlaceListRM.swift; sourceTree = "<group>"; };
+		71A2346A2312526D0004C2AD /* AmazingPlaceListRM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingPlaceListRM.swift; sourceTree = "<group>"; };
+		71A2346F231287120004C2AD /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		71A23473231289D20004C2AD /* AmazingListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingListVM.swift; sourceTree = "<group>"; };
+		71A2347B23128B4A0004C2AD /* TopRatedCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedCellVM.swift; sourceTree = "<group>"; };
+		71A2347F23128BF70004C2AD /* PlaceTableCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableCellVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +209,7 @@
 		711218C92310E29C00620F19 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				71A2346E231286E90004C2AD /* APIConstants */,
 				71A23464231245960004C2AD /* ResponseModel */,
 				71A23465231245A70004C2AD /* APIRequest */,
 			);
@@ -236,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				711218D22310E4B100620F19 /* AmazingListVC.swift */,
+				71A23473231289D20004C2AD /* AmazingListVM.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -243,8 +265,8 @@
 		711218D72310E4E200620F19 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				71A2345723117F850004C2AD /* CollectionViewCell */,
-				71A2345623117F790004C2AD /* TableCell */,
+				71A2345723117F850004C2AD /* TopRatedCell */,
+				71A2345623117F790004C2AD /* PlaceTableCell */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -268,28 +290,31 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		71A2345623117F790004C2AD /* TableCell */ = {
+		71A2345623117F790004C2AD /* PlaceTableCell */ = {
 			isa = PBXGroup;
 			children = (
-				711218F6231153B500620F19 /* AmazingTableCell.swift */,
-				711218F7231153B500620F19 /* AmazingTableCell.xib */,
+				711218F6231153B500620F19 /* PlaceTableCell.swift */,
+				711218F7231153B500620F19 /* PlaceTableCell.xib */,
+				71A2347F23128BF70004C2AD /* PlaceTableCellVM.swift */,
 			);
-			name = TableCell;
+			name = PlaceTableCell;
 			sourceTree = "<group>";
 		};
-		71A2345723117F850004C2AD /* CollectionViewCell */ = {
+		71A2345723117F850004C2AD /* TopRatedCell */ = {
 			isa = PBXGroup;
 			children = (
-				71A2345823117FAC0004C2AD /* CollectionViewCell.swift */,
-				71A2345923117FAC0004C2AD /* CollectionViewCell.xib */,
+				71A2345823117FAC0004C2AD /* TopRatedCell.swift */,
+				71A2345923117FAC0004C2AD /* TopRatedCell.xib */,
+				71A2347B23128B4A0004C2AD /* TopRatedCellVM.swift */,
 			);
-			name = CollectionViewCell;
+			name = TopRatedCell;
 			sourceTree = "<group>";
 		};
 		71A23464231245960004C2AD /* ResponseModel */ = {
 			isa = PBXGroup;
 			children = (
-				71A23466231246DF0004C2AD /* AmazingListRM.swift */,
+				71A23466231246DF0004C2AD /* TopRatedPlaceListRM.swift */,
+				71A2346A2312526D0004C2AD /* AmazingPlaceListRM.swift */,
 			);
 			path = ResponseModel;
 			sourceTree = "<group>";
@@ -301,6 +326,14 @@
 				71A23460231244030004C2AD /* AmazingListAPI.swift */,
 			);
 			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		71A2346E231286E90004C2AD /* APIConstants */ = {
+			isa = PBXGroup;
+			children = (
+				71A2346F231287120004C2AD /* APIConstant.swift */,
+			);
+			path = APIConstants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,9 +440,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711218FB231153B500620F19 /* AmazingTableCell.xib in Resources */,
+				711218FB231153B500620F19 /* PlaceTableCell.xib in Resources */,
 				711218CF2310E48400620F19 /* AmazingList.storyboard in Resources */,
-				71A2345D23117FAC0004C2AD /* CollectionViewCell.xib in Resources */,
+				71A2345D23117FAC0004C2AD /* TopRatedCell.xib in Resources */,
 				711218A62310E26000620F19 /* LaunchScreen.storyboard in Resources */,
 				711218DB2310EF1C00620F19 /* DetailOnWebView.storyboard in Resources */,
 				711218A32310E26000620F19 /* Assets.xcassets in Resources */,
@@ -420,9 +453,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711218FC231153B500620F19 /* AmazingTableCell.xib in Resources */,
+				711218FC231153B500620F19 /* PlaceTableCell.xib in Resources */,
 				711218DC2310EF1C00620F19 /* DetailOnWebView.storyboard in Resources */,
-				71A2345E23117FAC0004C2AD /* CollectionViewCell.xib in Resources */,
+				71A2345E23117FAC0004C2AD /* TopRatedCell.xib in Resources */,
 				711218D02310E48400620F19 /* AmazingList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,9 +464,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711218FD231153B500620F19 /* AmazingTableCell.xib in Resources */,
+				711218FD231153B500620F19 /* PlaceTableCell.xib in Resources */,
 				711218DD2310EF1C00620F19 /* DetailOnWebView.storyboard in Resources */,
-				71A2345F23117FAC0004C2AD /* CollectionViewCell.xib in Resources */,
+				71A2345F23117FAC0004C2AD /* TopRatedCell.xib in Resources */,
 				711218D12310E48400620F19 /* AmazingList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,15 +482,20 @@
 				711218FF2311719E00620F19 /* UIImageViewExtension.swift in Sources */,
 				711218D32310E4B100620F19 /* AmazingListVC.swift in Sources */,
 				711218DF2310EF4700620F19 /* DetailOnWebVC.swift in Sources */,
-				71A23467231246DF0004C2AD /* AmazingListRM.swift in Sources */,
-				711218F8231153B500620F19 /* AmazingTableCell.swift in Sources */,
+				71A23474231289D20004C2AD /* AmazingListVM.swift in Sources */,
+				71A23467231246DF0004C2AD /* TopRatedPlaceListRM.swift in Sources */,
+				711218F8231153B500620F19 /* PlaceTableCell.swift in Sources */,
 				7112189C2310E25F00620F19 /* AppDelegate.swift in Sources */,
 				711218EF2310FC7500620F19 /* NumberExtension.swift in Sources */,
+				71A2348023128BF70004C2AD /* PlaceTableCellVM.swift in Sources */,
+				71A23470231287120004C2AD /* APIConstant.swift in Sources */,
+				71A2347C23128B4A0004C2AD /* TopRatedCellVM.swift in Sources */,
+				71A2346B2312526D0004C2AD /* AmazingPlaceListRM.swift in Sources */,
 				711218E72310FBF600620F19 /* ProgressHUD.swift in Sources */,
 				711218E32310F44F00620F19 /* Utils.swift in Sources */,
 				711218F32310FDDB00620F19 /* APIRequest.swift in Sources */,
 				711218EB2310FC3700620F19 /* UIColorExtension.swift in Sources */,
-				71A2345A23117FAC0004C2AD /* CollectionViewCell.swift in Sources */,
+				71A2345A23117FAC0004C2AD /* TopRatedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,15 +507,20 @@
 				711219002311719E00620F19 /* UIImageViewExtension.swift in Sources */,
 				711218D42310E4B100620F19 /* AmazingListVC.swift in Sources */,
 				711218E02310EF4700620F19 /* DetailOnWebVC.swift in Sources */,
-				71A23468231246DF0004C2AD /* AmazingListRM.swift in Sources */,
-				711218F9231153B500620F19 /* AmazingTableCell.swift in Sources */,
+				71A23475231289D20004C2AD /* AmazingListVM.swift in Sources */,
+				71A23468231246DF0004C2AD /* TopRatedPlaceListRM.swift in Sources */,
+				711218F9231153B500620F19 /* PlaceTableCell.swift in Sources */,
 				711218B12310E26000620F19 /* MyAmazingListTests.swift in Sources */,
 				711218F02310FC7500620F19 /* NumberExtension.swift in Sources */,
+				71A2348123128BF70004C2AD /* PlaceTableCellVM.swift in Sources */,
+				71A23471231287120004C2AD /* APIConstant.swift in Sources */,
+				71A2347D23128B4A0004C2AD /* TopRatedCellVM.swift in Sources */,
+				71A2346C2312526D0004C2AD /* AmazingPlaceListRM.swift in Sources */,
 				711218E82310FBF600620F19 /* ProgressHUD.swift in Sources */,
 				711218E42310F44F00620F19 /* Utils.swift in Sources */,
 				711218F42310FDDB00620F19 /* APIRequest.swift in Sources */,
 				711218EC2310FC3700620F19 /* UIColorExtension.swift in Sources */,
-				71A2345B23117FAC0004C2AD /* CollectionViewCell.swift in Sources */,
+				71A2345B23117FAC0004C2AD /* TopRatedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,15 +532,20 @@
 				711219012311719E00620F19 /* UIImageViewExtension.swift in Sources */,
 				711218D52310E4B100620F19 /* AmazingListVC.swift in Sources */,
 				711218E12310EF4700620F19 /* DetailOnWebVC.swift in Sources */,
-				71A23469231246DF0004C2AD /* AmazingListRM.swift in Sources */,
-				711218FA231153B500620F19 /* AmazingTableCell.swift in Sources */,
+				71A23476231289D20004C2AD /* AmazingListVM.swift in Sources */,
+				71A23469231246DF0004C2AD /* TopRatedPlaceListRM.swift in Sources */,
+				711218FA231153B500620F19 /* PlaceTableCell.swift in Sources */,
 				711218BC2310E26000620F19 /* MyAmazingListUITests.swift in Sources */,
 				711218F12310FC7500620F19 /* NumberExtension.swift in Sources */,
+				71A2348223128BF70004C2AD /* PlaceTableCellVM.swift in Sources */,
+				71A23472231287120004C2AD /* APIConstant.swift in Sources */,
+				71A2347E23128B4A0004C2AD /* TopRatedCellVM.swift in Sources */,
+				71A2346D2312526D0004C2AD /* AmazingPlaceListRM.swift in Sources */,
 				711218E92310FBF600620F19 /* ProgressHUD.swift in Sources */,
 				711218E52310F44F00620F19 /* Utils.swift in Sources */,
 				711218F52310FDDB00620F19 /* APIRequest.swift in Sources */,
 				711218ED2310FC3700620F19 /* UIColorExtension.swift in Sources */,
-				71A2345C23117FAC0004C2AD /* CollectionViewCell.swift in Sources */,
+				71A2345C23117FAC0004C2AD /* TopRatedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  AmazingListRM.swift
+//  TopRatedListRM.swift
 //  MyAmazingList
 //
 //  Created by Jannatul Abeda on 2019/08/25.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AmazingListRM: NSObject {
+class TopRatedPlaceListRM: NSObject {
     var url: String?
     var image_url: String?
     
