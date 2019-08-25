@@ -17,7 +17,7 @@ class PlaceTableCell: UITableViewCell {
         
     override func layoutSubviews() {
         super.layoutSubviews()
-        viewImageShadow.frame.size = CGSize(width: 70.scale(), height: 70.scale())
+        viewImageShadow.frame.size = CGSize(width: 60.scale(), height: 60.scale())
         imageViewIcon.applyshadow(containerView: viewImageShadow,
                                   cornerRadious: 5.scale())
     }

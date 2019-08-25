@@ -23,19 +23,22 @@ class AmazingListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.title = "Amazing places"
+        
         // Top rated list in CollectionView
         setupCollectionView()
         setupTableView()
 
+        ProgressHUD.shared.show()
         requestForTopRatedList()
-        
         concurrentQueue.async {
             self.amazingListVM.requestForPlaceList { (placeList) in
                 if let _placeList = placeList {
                     self.amazingPlaceList = _placeList
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
+                        ProgressHUD.shared.hide()
                     }
                 }
             }
@@ -128,6 +131,7 @@ extension AmazingListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let viewController = UIStoryboard(name: "DetailOnWebView", bundle: nil).instantiateViewController(withIdentifier: "DetailOnWebVC") as? DetailOnWebVC {
             if amazingPlaceList[indexPath.row].url.count > 0 {
+                viewController.title = amazingPlaceList[indexPath.row].title
                 viewController.webLink = amazingPlaceList[indexPath.row].url
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
